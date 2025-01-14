@@ -1,0 +1,136 @@
+/*
+Переходы позволяют плавно перейти от одного состояния элемента к другому.
+— transition-property: какие свойства анимируются;
+— transition-duration: как долго длится анимация;
+— transition-timing-function: как вычисляются промежуточные состояния;
+— transition-delay: анимация начинается через некоторое время.
+*/
+.example a {
+  background: lightgrey;
+  color: grey;
+  margin-right: 10px;
+  padding: 5px 10px;
+  transition: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.example a:hover {
+  background: yellow;
+  color: red;
+}
+
+.example a.with-transition {
+  transition: 1s;
+}
+
+/* ======================================= Transition duration =================== */
+
+.transition-duration a {
+  background: lightgrey;
+  color: grey;
+  margin-right: 10px;
+  padding: 5px 10px;
+  transition: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.transition-duration a:hover {
+  background: yellow;
+  color: red;
+}
+
+.transition-duration a.with-fast-transition {
+  transition: 0.5s;
+}
+
+.transition-duration a.with-slow-transition {
+  transition: 3s;
+}
+
+/* ======================================= Transition property =================== */
+
+/* transition-property значение all, это просто означает, что будут анимироваться все возможные свойства. 
+Вы можете разрешить анимацию только одного или нескольких свойств. */
+.transition-property a {
+  background: lightgrey;
+  color: grey;
+  margin-right: 10px;
+  padding: 5px 10px;
+  transition: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.transition-property a:hover {
+  background: yellow;
+  border: 5px solid blue;
+  color: green;
+}
+
+.transition-property a.with-background-transition {
+  transition-duration: 2s;
+  transition-property: background;
+}
+
+.transition-property a.with-all-transition {
+  transition: 2s;
+}
+
+/* ======================================= Transition timing function =================== */
+
+/* Функция времени определяет, как вычисляется значение каждого свойства во время перехода.
+По умолчанию переход равен ease: он ускоряется в начале и замедляется в конце.
+Вы можете решить, что переход будет происходить с постоянной скоростью. Функция времени может ускорить или замедлить переход.
+*/
+.transition-timing-function div.block {
+  left: 0;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  transition: 1s;
+}
+
+.transition-timing-function div.hover-container:hover div.block {
+  left: 300px;
+}
+
+/* Пмедленно начинается, быстро в середине, медленно завершается */
+.transition-timing-function .hover-container .ease {
+  transition-timing-function: ease;
+}
+
+/* постоянная скорость */
+.transition-timing-function .hover-container .linear {
+  transition-timing-function: linear;
+}
+
+/* медленно начинается, быстро завершается */
+.transition-timing-function .hover-container .ease-in {
+  transition-timing-function: ease-in;
+}
+/* быстро начинается, медленно завершается */
+.transition-timing-function .hover-container .ease-out {
+  transition-timing-function: ease-out;
+}
+/* похоже на ease, но с более выраженным ускорением/замедлением */
+.transition-timing-function .hover-container .ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+.transition-timing-function div.block:nth-child(2) {
+  background: crimson;
+}
+.transition-timing-function div.block:nth-child(4) {
+  background: midnightblue;
+}
+.transition-timing-function div.block:nth-child(6) {
+  background: mediumseagreen;
+}
+.transition-timing-function div.block:nth-child(8) {
+  background: orangered;
+}
+.transition-timing-function div.block:nth-child(10) {
+  background: darkviolet;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Transition in CSS</title>
+</head>
+
+<body>
+  <main>
+    <h1>Transition in CSS</h1>
+    <section class="example">
+      <h2>Ehample</h2>
+      <a>Без перехода</a>
+      <a class="with-transition">С переходом</a>
+      <hr>
+    </section>
+
+    <section class="transition-duration">
+      <h2>Transition duration</h2>
+      <a>Без перехода</a>
+      <a class="with-fast-transition">Переход 0.5s</a>
+      <a class="with-slow-transition">Переход 3s</a>
+      <hr>
+    </section>
+
+    <section class="transition-property">
+      <h2>Transition property</h2>
+      <a>Без перехода</a>
+      <a class="with-background-transition">Переход только для background</a>
+      <a class="with-all-transition">Переход для всех свойств</a>
+      <hr>
+    </section>
+
+    <section class="transition-timing-function">
+      <h2>Transition timing function</h2>
+      <div class="hover-container">
+        <p><strong>ease</strong>: медленно начинается, быстро в середине, медленно завершается</p>
+        <div class="block ease"></div>
+        <p><strong>linear</strong>: постоянная скорость</p>
+        <div class="block linear"></div>
+        <p><strong>ease-in</strong>: медленно начинается, быстро завершается</p>
+        <div class="block ease-in"></div>
+        <p><strong>ease-out</strong>: быстро начинается, медленно завершается</p>
+        <div class="block ease-out"></div>
+        <p><strong>ease-in-out</strong>: похоже на ease, но с более выраженным ускорением/замедлением</p>
+        <div class="block ease-in-out"></div>
+      </div>
+      <hr>
+    </section>
+  </main>
+</body>
+
+</html>
