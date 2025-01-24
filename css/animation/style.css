@@ -1,0 +1,90 @@
+/* ============================ Свойства анимации ============================== */
+
+/*
+* animation-name: название анимации;
+* animation-duration: как долго длится анимация;
+* animation-timing-function: как вычисляются промежуточные состояния;
+* animation-delay: анимация начинается спустя некоторое время;
+* animation-iteration-count: сколько раз должна выполняться анимация;
+* animation-direction: должно движение идти в обратную сторону или нет;
+* animation-fill-mode: какие стили применяются до начала анимации и после её завершения.
+* animation-play-state: остановка и возобновление анимации.
+*/
+
+/* Пример анимации Button Loader*/
+@keyframes bouncing {
+  0% {
+    bottom: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    bottom: 50px;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.loader a {
+  animation: bouncing 0.5s cubic-bezier(0.1, 0.25, 0.1, 1) 0s infinite alternate
+    both;
+  background: lightslategrey;
+  border-radius: 2px;
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.2em;
+  padding: 1em 2em 1.1em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+  margin-top: 50px;
+}
+
+/*Сначала нужно написать реальную анимацию подпрыгивания с помощью @keyframes и назвать её bouncing. Затем вы можете использовать эту анимацию, применяя её к loading-button.
+Я использовал сокращенное свойство animation и включил все возможные варианты:
+* animation-name: bouncing (совпадает с названием ключевых кадров)
+* animation-duration: 0.5s (полсекунды)
+* animation-timing-function: cubic-bezier(0.1,0.25,0.1,1) 
+* animation-delay: 0s (без задержки)
+* animation-iteration-count: infinite (воспроизводится бесконечно)
+* animation-direction: alternate (идёт назад и вперёд)
+* animation-fill-mode: both
+*/
+
+/* Example Square */
+@keyframes around {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 240px;
+    top: 0;
+  }
+  50% {
+    left: 240px;
+    top: 140px;
+  }
+  75% {
+    left: 0;
+    top: 140px;
+  }
+  100% {
+    left: 0;
+    top: 0;
+  }
+}
+
+.square p {
+  animation: around 4s linear 0s infinite;
+  background: turquoise;
+  color: white;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 60px;
+}
