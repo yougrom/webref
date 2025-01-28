@@ -1,0 +1,61 @@
+/*float left*/
+.img--text .fig {
+  float: left;
+  margin-right: 10px;
+}
+
+/* Example Элемент с float и со значением left или right превращается в блочный, к нему автоматически добавляется свойство display со значением block. При этом ширина элемента равна его содержимому плюс значения свойств padding, border и margin. В этом отношении элемент ведёт себя как строчно-блочный. */
+.img--number div {
+  color: #f5faf4; /* Цвет текста */
+  font-size: 2em; /* Размер шрифта */
+  padding: 10px 20px; /* Поля вокруг текста */
+  margin-bottom: 1em; /* Отступ снизу */
+}
+.img--number .ltr {
+  float: left;
+  background: #69539c; /* Цвет фона */
+  margin-right: 10px; /* Отступ справа */
+}
+.img--number .rtl {
+  float: right;
+  background: #37673f; /* Цвет фона */
+  margin-left: 10px; /* Отступ слева */
+}
+
+/* Example */
+.square .col1,
+.square .col2 {
+  float: left;
+  min-height: 150px; /* Минимальная высота */
+}
+.square .col1 {
+  background: #85ab70; /* Цвет фона */
+  width: 30%; /* Ширина */
+  border-right: 2px solid #ece190; /* Линия справа */
+}
+.square .col2 {
+  background: #406325; /* Цвет фона */
+  width: 70%; /* Ширина */
+}
+
+.square section {
+  margin-bottom: 10em; /* Отступ снизу */
+}
+
+/* Example */
+.arrow--text .arrow {
+  font-size: 2em; /* Размер стрелок */
+  background: #e7e7e0; /* Цвет фона */
+}
+.arrow--text .prev,
+.arrow--text .next {
+  color: #d51920; /* Цвет стрелок */
+  width: 50%; /* Ширина блоков */
+}
+.arrow--text .prev {
+  float: left;
+}
+.arrow--text .next {
+  float: right;
+  text-align: right; /* Выравнивание по правому краю */
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="header">
+    <ul>
+      <li><a href="#home">Главная</a></li>
+      <li><a href="#news">Новости</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#contact">Контакты</a></li>
+    </ul>
+    <h1>Добро пожаловать на сайт</h1>
+  </section>
+  <section class="post">
+    <h2>Создание врезок</h2>
+    <aside>
+      <p><img src="image/magiceraser.png" width="21" height="15" alt="Magic Eraser"> —
+        инструмент Magic Eraser.</p>
+      <p>По своему действию похож на инструмент Magic Wand, но в отличие от
+        него, не выделяет область, а стирает её.</p>
+    </aside>
+    <p>Инструмент Magic Eraser (Волшебный ластик) стирает пиксели близкие по
+      цвету. Если мы работаем со слоем Background или со слоем, прозрачность
+      на котором заблокирована, пиксели заменятся на фоновый цвет. Во всех
+      остальных случаях мы получим прозрачную область.</p>
+    <p>Принцип работы с инструментом Magic Eraser напоминает работу с
+      инструментом Magic Wand. А именно, вначале устанавливаем подходящее
+      значение Tolerance, включаем флажок Anti-alias для создания плавных
+      границ, убираем флажок с параметра Contiguous для одновременного удаления
+      всего фона, после чего щёлкаем по фотографии в районе неба. Если слой
+      Background был предварительно переименован, мы получим прозрачные
+      участки в нужных местах.</p>
+  </section>
+  <section class="gallery">
+    <article>
+      <figure>
+        <p><img src="image/thumb4.jpg"></p>
+        <figcaption>Владимиру</figcaption>
+      </figure>
+      <figure>
+        <p><img src="image/thumb3.jpg"></p>
+        <figcaption>Купеческий клуб</figcaption>
+      </figure>
+      <figure>
+        <p><img src="image/thumb2.jpg"></p>
+        <figcaption>Польский костел</figcaption>
+      </figure>
+      <figure>
+        <p><img src="image/thumb1.jpg"></p>
+        <figcaption>Софийский собор</figcaption>
+      </figure>
+    </article>
+  </section>
+  <section class="two-column__layout">
+    <div class="row">
+      <div class="sidebar">Sidebar</div>
+      <div class="content">Содержимое</div>
+    </div>
+    <footer>Подвал</footer>
+  </section>
+  <section class="three-column__layout">
+    <div class="row">
+      <div class="nav">Навигация</div>
+      <div class="sidebar">Боковая панель</div>
+      <div class="content">Содержимое</div>
+    </div>
+  </section>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+section {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+/************ Menu ************/
+.header {
+  background: #f3f0e9;
+
+  border-bottom: 1px solid #ccc;
+}
+.header ul {
+  background: blue;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Отменяем обтекание */
+}
+.header li {
+  float: left;
+  padding: 5px 20px;
+}
+.header a {
+  display: block;
+  padding: 5px;
+  text-decoration: underline;
+  color: white;
+}
+
+/************ Post ************/
+.post {
+  overflow: hidden; /* Отменяем обтекание */
+}
+.post aside {
+  float: right;
+  width: 140px;
+  margin: 10px 0 10px 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f3f0e9;
+}
+.post aside p {
+  margin: 0.6em 0;
+}
+.post aside img {
+  vertical-align: middle; /* Выравнивание по середине строки */
+}
+
+/************ Gallery ************/
+.gallery article {
+  overflow: hidden; /* Отменяем обтекание */
+}
+.gallery figure {
+  float: left;
+  background-color: bisque;
+  padding: 20px;
+  width: 120px;
+  margin: 0;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+/************ Двухколоночный макет ************/
+.two-column__layout .row {
+  overflow: hidden;
+}
+.two-column__layout .sidebar,
+.two-column__layout .content,
+.two-column__layout footer {
+  float: left; /* Формируем колонки */
+  box-sizing: border-box; /* padding не влияет на ширину */
+  padding: 20px;
+}
+.two-column__layout .sidebar {
+  width: calc(20% - 20px);
+  margin-right: 20px;
+  background-color: aqua;
+}
+.two-column__layout .content {
+  width: 80%;
+  background-color: beige;
+}
+
+.two-column__layout footer {
+  background-color: #f3f0e9;
+  width: 100%;
+  margin-top: 20px; /* Отступ сверху */
+}
+
+/************ Трёхколоночный макет ************/
+.three-column__layout .row {
+  overflow: hidden;
+}
+.three-column__layout .nav,
+.three-column__layout .sidebar,
+.three-column__layout .content {
+  box-sizing: border-box; /* padding не влияет на ширину */
+  padding: 20px;
+  min-height: 100px;
+}
+.three-column__layout .nav {
+  float: left; /* Колонка слева */
+  width: 200px;
+  background-color: aqua;
+}
+.three-column__layout .sidebar {
+  float: right; /* Колонка справа */
+  background-color: beige;
+}
+.three-column__layout .content {
+  margin-right: 20%; /* Ширина колонки справа */
+  margin-left: 200px;
+  background-color: bisque;
+}
