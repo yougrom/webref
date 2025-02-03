@@ -1,0 +1,107 @@
+section {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+/************************** Градиент ***************************/
+.gradient {
+  /* Градиент */
+  background: linear-gradient(to top, #cfe7fa, #6393c1);
+  padding: 10px; /* Толщина рамки */
+}
+.gradient > div {
+  background: #fff; /* Белый цвет фона */
+  padding: 20px; /* Поля вокруг текста */
+}
+
+/************************** background clip ***************************/
+.background--clip div {
+  width: 300px;
+  height: 150px;
+  border: 15px solid black;
+  padding: 20px;
+  background: linear-gradient(45deg, red, yellow);
+  color: white;
+  margin-bottom: 20px;
+}
+
+.background--clip .border-box {
+  background-clip: border-box;
+}
+
+.background--clip .padding-box {
+  background-clip: padding-box;
+  border: 15px solid rgba(0, 0, 0, 0.1);
+}
+
+.background--clip .content-box {
+  background-clip: content-box;
+}
+
+.background--clip .text {
+  background-clip: text;
+  color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+/************************** Выравнивание блока ***************************/
+/*Выравнивание блока по центру через значение auto работает только в сочетании с width.*/
+
+.margin-auto__text div.dialog {
+  width: 300px;
+  height: 150px;
+  border: 15px solid black;
+  padding: 20px;
+  background: linear-gradient(45deg, red, yellow);
+  color: white;
+  margin: auto;
+}
+
+.margin-auto__img img {
+  display: block;
+  margin: auto;
+}
+
+/************************** Схлопывание margin ***************************/
+.margin-model .block {
+  padding: 20px; /* Поля вокруг текста */
+  border: 1px solid #666; /* Параметры рамки */
+}
+.margin-model .block1 {
+  background: #e2edc1; /* Цвет фона первого блока */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+.margin-model .block2 {
+  background: #fce3ee; /* Цвет фона второго блока */
+  margin-top: -10px; /* Отрицательный отступ сверху */
+}
+
+/************************** margin у заголовка ***************************/
+.margin-block .block {
+  background: #fce3ee; /* Цвет фона блока */
+  padding: 0.1px 0;
+}
+.margin-block h1 {
+  background: #e2edc1; /* Цвет фона заголовка */
+}
+
+/*Для отмены схлопывания у дочерних элементов можно использовать один из вариантов.*/
+.block-new {
+  /* 1. Ненулевой padding сверху и снизу */
+  padding: 0.1px 0;
+  /* 2. Скрываем всё за пределами блока */
+  overflow: hidden;
+  /* 3. Прозрачная линия сверху и снизу */
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+
+/************************** Алгоритм блочной модели ***************************/
+.block-model [type='search'] {
+  box-sizing: border-box; /* Ширина не учитывает padding и border */
+  width: 100%; /* Ширина */
+  border: 1px solid #666; /* Параметры рамки */
+  padding: 10px; /* Поля вокруг текста */
+}
