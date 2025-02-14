@@ -29,3 +29,14 @@ section.block {
   color: #800000; /* Новый цвет ссылки */
   border: 1px dashed #634f36; /* Рамка вокруг ссылки */
 }
+
+/* Icons */
+.icons img {
+  vertical-align: middle; /* Выравнивание по середине */
+}
+.icons .icon {
+  vertical-align: middle; /* Выравнивание по середине */
+  margin-left: 7px; /* Отступ слева */
+  margin-right: 20px; /* Отступ справа */
+  color: #ed1c24; /* Цвет текста */
+}
