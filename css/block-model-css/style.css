@@ -40,3 +40,16 @@ section.block {
   margin-right: 20px; /* Отступ справа */
   color: #ed1c24; /* Цвет текста */
 }
+
+.gallery .photo {
+  background: #d9dabb; /* Цвет фона */
+  width: 150px; /* Ширина */
+  margin: 0 10px 10px 0; /* Отступы справа и снизу */
+  padding: 10px 0; /* Поля сверху и снизу */
+  text-align: center; /* Выравнивание по центру */
+  display: inline-block; /* Строчно-блочный элемент */
+  vertical-align: top; /* Выравнивание по верхнему краю */
+}
+.gallery .photo img {
+  border: 2px solid #8b8e4b; /* Параметры рамки */
+}
