@@ -1,0 +1,31 @@
+section {
+  background: gold;
+  height: 500px;
+  padding: 10px;
+  position: relative; /* Превращает <section> в точку отсчёта для <p> */
+}
+
+p {
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+p.first {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border: 5px solid blueviolet;
+}
+
+p.second {
+  background: limegreen;
+  color: white;
+  padding: 10px;
+  position: absolute; /* Делает <p> свободно перемещаемым */
+  bottom: 10px; /* 10px снизу */
+  left: 0px; /* 20px слева */
+  right: 0px;
+}
