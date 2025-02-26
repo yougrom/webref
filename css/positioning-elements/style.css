@@ -1,0 +1,46 @@
+section {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #ccc;
+}
+/*class="container-1"*/
+.container-1 h1 {
+  font: normal 2em Arial, Tahome, sans-serif; /* Параметры шрифта */
+  background: #3989c9; /* Синий цвет фона */
+  color: #fff; /* Белый цвет текста */
+  padding: 0 1rem; /* Поля вокруг заголовка */
+  overflow: hidden; /* Скрываем всё за пределами заголовка */
+}
+.container-1 h1 span {
+  position: relative; /* Относительное позиционирование */
+  top: 0.48rem; /* Сдвигаем вниз */
+}
+
+/*class="container-2"*/
+.container-2 button {
+  background: #ce242b; /* Красный фон */
+  color: #fff; /* Белый цвет текста */
+  border: none; /* Убираем рамку */
+  padding: 0.7rem 2rem; /* Поля вокруг текста */
+  box-shadow: 5px 5px 0 #000; /* Параметры тени */
+  position: relative; /* Относительное позиционирование */
+  left: 0; /* Положение слева */
+  top: 0; /* Положение сверху */
+  transition: 1s; /* Время анимации */
+}
+.container-2 button:hover {
+  left: 5px; /* Положение слева */
+  top: 5px; /* Положение сверху */
+  box-shadow: 0 0 0 #000; /* Параметры тени */
+}
+
+/*class="container-3"*/
+.container-3 img {
+  border: 1px solid #ce242b; /* Параметры рамки */
+  position: relative; /* Относительное позиционирование */
+  transition: 1s; /* Время анимации */
+}
+.container-3 img:hover {
+  z-index: 10; /* Поверх всех картинок */
+  transform: scale(1.2); /* Масштабирование на 20% */
+}
