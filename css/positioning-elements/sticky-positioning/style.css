@@ -1,0 +1,20 @@
+body {
+  min-height: 1000px; /* Минимальная высота */
+}
+header,
+nav {
+  color: #fff; /* Цвет текста */
+  padding: 10px; /* Поля */
+  margin-bottom: 20px;
+}
+header {
+  background: #009d4b; /* Цвет фона */
+}
+nav {
+  background: #3989c9; /* Цвет фона */
+  position: sticky; /* Липкое позиционирование */
+  top: 50px; /* Положение сверху */
+}
+nav.red {
+  background: #c93939; /* Цвет фона */
+}
